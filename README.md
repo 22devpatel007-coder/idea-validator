@@ -5,6 +5,19 @@ This folder has two ready-to-use versions of the same idea-validation system:
 - [Claude Idea Validator Skill](claude-idea-validator-skill/) for Claude.
 - [ChatGPT Idea Validator Plugin](chatgpt-idea-validator-plugin/) for ChatGPT.
 
+Both skills help you check an idea before you spend time or money building it. They review the problem, target customers, competitors, market demand, costs, technical risks, and business model. They then give one clear verdict: **BUILD**, **TEST**, **MODIFY**, or **REJECT**.
+
+```mermaid
+flowchart LR
+    A[Share your idea] --> B[Check demand and risks]
+    B --> C[Review evidence]
+    C --> D{Verdict}
+    D --> E[BUILD]
+    D --> F[TEST]
+    D --> G[MODIFY]
+    D --> H[REJECT]
+```
+
 **Jump to setup:**
 
 - [Set up in Claude](#set-up-in-claude)
