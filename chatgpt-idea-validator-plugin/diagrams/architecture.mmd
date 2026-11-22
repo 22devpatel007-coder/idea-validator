@@ -1,0 +1,27 @@
+flowchart TD
+    A[User submits idea] --> B[ChatGPT Idea Validator Skill]
+    B --> C[Frame idea and assumptions]
+    C --> D1[Market research]
+    C --> D2[Competitor analysis]
+    C --> D3[Customer research]
+    C --> D4[Business analysis]
+    C --> D5[Technical feasibility]
+    C --> D6[Financial analysis]
+    C --> D7[Devil's advocate]
+    D1 --> E[Evidence audit and contradiction review]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+    D5 --> E
+    D6 --> E
+    D7 --> E
+    E --> F[Score viability and confidence separately]
+    F --> G{Decision}
+    G -->|Evidence supports MVP| H[BUILD]
+    G -->|Demand unproven| I[TEST]
+    G -->|Fixable weaknesses| J[MODIFY]
+    G -->|Weak current case| K[REJECT]
+    H --> L[Report and next steps]
+    I --> L
+    J --> L
+    K --> L
